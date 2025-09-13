@@ -6,6 +6,9 @@
 .timeline-page.pastel { max-width:1180px; margin:0 auto; padding:2.5rem 2rem 4rem; }
 .page-header { text-align:center; margin:0 0 2.2rem; }
 .page-header h1 { margin:0 0 .65rem; font-size:2.1rem; font-weight:600; letter-spacing:.5px; color:#2c2c2c; }
+.page-header .app-title { font-size:2.65rem; letter-spacing:.5px; font-weight:650; margin:0 0 .4rem; }
+.page-header .app-subtitle { font-size:1.25rem; margin:.1rem 0 .9rem; font-weight:500; letter-spacing:.4px; color:#393531; }
+.page-header .desc { margin-top:.2rem; }
 .subtitle { margin:0; font-size:.85rem; color:var(--muted); letter-spacing:.4px; }
 
 /* === Round Timeline === */
@@ -79,6 +82,8 @@
   .round-card { margin-left:92px; padding:1.2rem 1.2rem 1.3rem; }
   .ev-time { min-width:96px; }
   .round-node:before { left:55px; width:38px; }
+  .page-header .app-title { font-size:2.1rem; }
+  .page-header .app-subtitle { font-size:1.05rem; margin-bottom:.7rem; }
 }
 @media (max-width:560px){
   .round-card { margin-left:84px; }

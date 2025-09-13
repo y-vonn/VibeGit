@@ -89,8 +89,9 @@ const App: React.FC = () => {
   return (
     <div className="timeline-page pastel" ref={containerRef}>
       <header className="page-header">
-        <h1>VibeGit 回合时间轴</h1>
-        <p className="subtitle">每个圆点是一整个 Round · 点击展开查看事件细节 · {total || '0'} rounds</p>
+        <h1 className="app-title">VibeGit</h1>
+        <h2 className="app-subtitle">回合时间轴</h2>
+        <p className="subtitle desc">每个圆点代表一整个 Round · 点击展开查看事件细节 · 共 {total || '0'} 个 rounds</p>
       </header>
       <main>
         <ol className="round-timeline dynamic-axis">
