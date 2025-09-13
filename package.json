@@ -1,0 +1,28 @@
+{
+  "name": "vibe-git-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Fullstack monorepo (frontend + backend + shared)",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm-run-all -p dev:backend dev:frontend",
+    "dev:backend": "npm --workspace backend run dev",
+    "dev:frontend": "npm --workspace frontend run dev",
+    "build": "npm-run-all build:shared build:backend build:frontend",
+    "build:backend": "npm --workspace backend run build",
+    "build:frontend": "npm --workspace frontend run build",
+    "build:shared": "npm --workspace shared run build",
+    "lint": "echo 'add eslint later'",
+    "start": "npm --workspace backend start"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.4.0"
+  }
+}
